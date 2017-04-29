@@ -10,7 +10,7 @@ set(Recipe_Name "3_0_DeviceHandshake")
 # ON  - Use CMake to auto locate the Vulkan SDK.
 # OFF - Vulkan SDK path can be specified manually. This is helpful to test the build on various Vulkan version.
 option(AUTO_LOCATE_VULKAN "AUTO_LOCATE_VULKAN" ON)
-
+SET(AUTO_LOCATE_VULKAN OFF)
 if(AUTO_LOCATE_VULKAN)
 	message(STATUS "Attempting auto locate Vulkan using CMake......")
 	
@@ -40,8 +40,8 @@ if(AUTO_LOCATE_VULKAN)
 	endif()
 else()
 	message(STATUS "Attempting to locate Vulkan SDK using manual path......")
-	set(VULKAN_SDK "C:/VulkanSDK")
-	set(VULKAN_VERSION "1.0.33.0")
+	set(VULKAN_SDK "/home/reese/VulkanSDK")
+	set(VULKAN_VERSION "1.0.46.0")
 	set(VULKAN_PATH "${VULKAN_SDK}/${VULKAN_VERSION}")
 	message(STATUS "Using manual specified path: ${VULKAN_PATH}")
 
