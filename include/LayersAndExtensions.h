@@ -10,7 +10,7 @@ typedef struct {
     VkExtensionProperties *extensions;
 } LayerProperties;
 
-VkResult get_instance_layer_properties();
+VkResult get_instance_layer_properties(LayerProperties *layerPropertyList);
 VkResult get_extension_properties(LayerProperties layerProps, VkPhysicalDevice *gpu);
 
 #endif

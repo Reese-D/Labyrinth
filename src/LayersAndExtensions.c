@@ -5,12 +5,11 @@
 *******************************************************************************/
 #include "LayersAndExtensions.h"
 
-VkResult get_instance_layer_properties(){
+VkResult get_instance_layer_properties(LayerProperties *layerPropertyList){
     uint32_t instanceLayerCount;
     VkLayerProperties *layerProperties;
-    LayerProperties *layerPropertyList;
     VkResult result;
-    
+
     do{
 	result = vkEnumerateInstanceLayerProperties( &instanceLayerCount, NULL );
 	
@@ -24,7 +23,7 @@ VkResult get_instance_layer_properties(){
     }while(result == VK_INCOMPLETE);
 
     printf("Instanced Layers\n");
-    printf("================");
+    printf("================\n");
 
     for(int i = 0; i < instanceLayerCount; i++){
 	printf("Layer Name: %s, Description: %s\n",layerProperties[i].layerName, layerProperties[i].description);
@@ -45,9 +44,13 @@ VkResult get_instance_layer_properties(){
     return result;
 }
 
-/* VkResult get_device_extension_properties(VkPhysicalDevice *gpu){ */
-/*     VkResult re */
-/* } */
+ VkResult get_device_extension_properties(VkPhysicalDevice *gpu){
+     VkResult result;
+     printf("Device Extensions\n");
+     printf("================\n");
+
+     //TODO finish
+ }
 
 //allocates data in the extensions of layerProps, which will need to be freed by caller
 VkResult get_extension_properties(LayerProperties layerProps, VkPhysicalDevice *gpu){
