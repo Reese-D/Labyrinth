@@ -1,3 +1,6 @@
 CMake*
 external*
 CMakeCache.txt
+cmake_*
+Makefile
+nomad
