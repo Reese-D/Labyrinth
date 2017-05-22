@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/3_0_DeviceHandshake.dir/source/VulkanApplication.cpp.o CMakeFiles/3_0_DeviceHandshake.dir/source/VulkanDevice.cpp.o CMakeFiles/3_0_DeviceHandshake.dir/source/VulkanInstance.cpp.o CMakeFiles/3_0_DeviceHandshake.dir/source/VulkanLED.cpp.o CMakeFiles/3_0_DeviceHandshake.dir/source/main.cpp.o  -o binaries/3_0_DeviceHandshake -lvulkan-1 

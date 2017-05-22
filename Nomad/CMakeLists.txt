@@ -1,5 +1,5 @@
 # CMake entry point
-cmake_minimum_required (VERSION 3.6)
+cmake_minimum_required (VERSION 3.5)
 project (Nomad)
 find_package(OpenGL REQUIRED)
 
