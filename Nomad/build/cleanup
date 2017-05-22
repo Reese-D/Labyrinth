@@ -1,4 +1,4 @@
 #!/bin/bash
-rm -rf Makefile external/  CMake* *~ cmake_*
+rm -rf Makefile external/  CMake* *~ cmake_* nomad
 cp ../shaders/* .
 cp ../uvtemplate.DDS .
