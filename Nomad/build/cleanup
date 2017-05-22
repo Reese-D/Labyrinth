@@ -1,0 +1,4 @@
+#!/bin/bash
+rm -rf Makefile external/  CMake* *~
+cp ../shaders/* .
+cp ../uvtemplate.DDS .
